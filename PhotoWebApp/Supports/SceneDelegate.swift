@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let board = UIStoryboard(name: "Main", bundle: nil)
                 // Instantiate : Örneklendirmek
                 // as! : Cast ederken kullandık (Cast etmek : model göstermek).
-            let tabBar = board.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
+            let tabBar = board.instantiateViewController(withIdentifier: "tabBar") as? UITabBarController
             window?.rootViewController = tabBar
         }
         guard let _ = (scene as? UIWindowScene) else { return }
