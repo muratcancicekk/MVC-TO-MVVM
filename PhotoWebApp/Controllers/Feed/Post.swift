@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Post {
+final class Post {
     var email: String
     var comment: String
     var image: String
